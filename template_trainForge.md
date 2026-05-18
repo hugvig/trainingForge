@@ -13,6 +13,13 @@
 - email/numéro de téléphone
 - prep physique/entraineur
 
+## coach_athlete
+- ID
+- Coach_id
+- User_id
+- Role (entraineur principale, assistant)
+- Date_start
+
 ## Exercices
 - ID
 - nom
@@ -36,17 +43,53 @@
 - Programmes_id
 - Jour 1,2..
 - Focus (upper, lower, snatch, epj...)
-
+ 
 ## Séries / Performances
+- ID
+- Workout ID
+- Exercices ID
+- Sets
+- Reps
+- Poids (% ou Kg)
+- Tempo
+- RPE 
+- Repos
 
-
-## Progression
+## workout log
+- ID
+- Workout_id
+- User_id
+- Date reelle
+- Status (planned, completed, skipped)
 
 
 ## Méthodes d'entrainement
+- ID
+- Nom
+- Description
+- Type
 
+## Messages
+- ID
+- Sender_id
+- Receiver_id
+- Group_id
+- Content
+- Timestamp
+
+## Group 
+- Entraineur_id
+- Nom_entraineur
+- Group_id
+- Group_nom
+- group messaging
 
 # Calendrier
+## Intégration de google calendar
+- Lier les plans au calendrier
+- associer plan a entraineur
 
 
-#
+# Compression des fichiers de plans antérieur
+
+# HA pour les serveurs
