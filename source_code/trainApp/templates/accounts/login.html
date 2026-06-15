@@ -1,0 +1,37 @@
+{% extends "../base.html" %}
+
+{% block head %}
+
+    <title>Login</title>
+    <style>
+        .error{color: red;}
+    </style>
+
+{% endblock %}
+
+
+{% block body %}
+	<div class="title">
+    	<h1>Login</h1>
+	</div>
+    <form method="POST" action="{% url 'login' %}" class="login-form">
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next }}">
+        <div class="form_group">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required>
+        </div>  
+        <div class="from_group">
+            <label for="password">Password</label>
+            <input type"text" name="password" id="password" required>
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+    </form>    
+
+    {% comment %} checking for any error messages {% endcomment %}    
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+    <p class="register">Don't have an account?</p>
+
+{% endblock %}

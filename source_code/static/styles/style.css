@@ -1,0 +1,97 @@
+body{
+	background-color: #8a8a8a;
+	color: white;
+	overflow:hidden;
+}
+
+/*
+ *start css login page
+ * */
+
+.title{
+	margin-top: 2%;
+	margin-left: 45%;
+}
+
+.login-form{
+	margin-top: 4%;
+	margin-left: 40%;
+}
+
+.login-btn{
+	margin-left: 10%;
+}
+
+/*
+ *end css login page
+ * */
+
+
+/*
+ *start css home page
+ * */
+
+.title_home_page{
+	margin-top: 2%;
+	margin-left: 35%;
+}
+
+/*
+ *end css home page
+ * */
+
+/*
+ *start css side menu
+ * */
+
+.side_menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 12vw;
+	height: 100vh;
+	background-color: #2c2e30;
+}
+
+.side_menu > div{
+	cursor: pointer;
+	border-radius: 10px;
+	width: 90%;
+	left: 5%;
+	position: relative;
+}
+
+.side_menu > div:not(.side_title):hover{
+	background-color: white;
+	color: black ;
+}
+
+.side_menu_text{
+	left: 15%;
+	position: relative;
+}
+
+.side_menu_title{
+	left: 5%;
+	position: relative;
+}
+
+/*
+ *end css side menu
+ * */
+
+/*
+ * start css main page
+ * */
+
+.main_page{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 88vw;
+	height: 100vh
+}
+
+/*
+ * end css main page
+ * */
