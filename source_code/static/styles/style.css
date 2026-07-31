@@ -95,3 +95,45 @@ body{
 /*
  * end css main page
  * */
+
+
+/*
+ * start css plan page
+ * */
+
+.title_plan_page{
+	margin-top: 2%;
+	margin-left: 49%;
+}
+
+/*
+ * end css plan page
+ * */
+
+
+/*
+ * start exercices page
+ * */
+
+.title_exercices_page{
+	margin-top: 2%;
+	margin-left: 45%;
+}
+
+/*
+ * end exercices page
+ * */
+
+
+/*
+ * start profile  page
+ * */
+
+.title_profile_page{
+	margin-top: 2%;
+	margin-left: 45%;
+}
+
+/*
+ * end profile  page
+ * */

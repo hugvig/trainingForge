@@ -26,12 +26,12 @@
             <input type"text" name="password" id="password" required>
         </div>
         <button type="submit" class="login-btn">Login</button>
+		<button type="button" class="register-btn" onclick="window.location.href='{% url 'register' %}';">Create an account</button>
     </form>    
 
     {% comment %} checking for any error messages {% endcomment %}    
     {% if error %}
         <p class="error">{{ error }}</p>
     {% endif %}
-    <p class="register">Don't have an account?</p>
 
 {% endblock %}

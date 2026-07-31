@@ -32,3 +32,6 @@ def plan_view(request):
 
 def excercices_view(request):
     return render(request, 'training/exercices.html')
+
+def register_view(request):
+    return render(request, 'accounts/register.html')
